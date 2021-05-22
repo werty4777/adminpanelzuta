@@ -30,6 +30,7 @@ import {TipoTapasService} from './services/tipoTapas/tipo-tapas.service';
 import {NgxMatFileInputModule} from '@angular-material-components/file-input';
 import {CardComponent} from './shared/components/card/card.component';
 import {CardListComponent} from './shared/components/card-list/card-list.component';
+import {CardModalComponent} from './shared/components/card-modal/card-modal.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import {CardListComponent} from './shared/components/card-list/card-list.compone
     TapasComponent,
     TapasModalComponent,
     CardComponent,
-    CardListComponent
+    CardListComponent,
+    CardModalComponent
 
 
   ],
