@@ -28,8 +28,8 @@ import {LoginServiceService} from './services/login/login-service.service';
 import {TapasServiceService} from './services/tapas/tapas-service.service';
 import {TipoTapasService} from './services/tipoTapas/tipo-tapas.service';
 import {NgxMatFileInputModule} from '@angular-material-components/file-input';
-import {CardComponent} from './shared/components/card/card.component';
-import {CardListComponent} from './shared/components/card-list/card-list.component';
+import {CardComponent} from './components/tapas/card/card.component';
+import {CardListComponent} from './components/tapas/card-list/card-list.component';
 import {CardModalComponent} from './shared/components/card-modal/card-modal.component';
 
 

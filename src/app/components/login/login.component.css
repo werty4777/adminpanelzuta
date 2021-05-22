@@ -18,7 +18,7 @@ button,input{
 .container{
   width: 100%;
   min-height: 100vh;
-
+  padding: 0 !important;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -164,45 +164,4 @@ button,input{
   letter-spacing: 1px;
 }
 /* responsive */
-
-
-@media (max-width: 992px) {
-  .login-form {
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-
-  }
-
-  .login-form {
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .login-form {
-    width: 100%;
-  }
-
-  .login-form {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .login-form {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 150px;
-  }
-
-  .wrap-input
-  {
-    width: 100%;
-  }
-
-  .wrap-input {
-
-  }
-}
 

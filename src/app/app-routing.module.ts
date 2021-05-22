@@ -4,8 +4,8 @@ import {RouterModule, Routes} from '@angular/router';
 import {TapasComponent} from './components/tapas/tapas.component';
 import {LoginComponent} from './components/login/login.component';
 import {HomeComponent} from './components/home/home.component';
-import {CardComponent} from './shared/components/card/card.component';
-import {CardListComponent} from './shared/components/card-list/card-list.component';
+import {CardComponent} from './components/tapas/card/card.component';
+import {CardListComponent} from './components/tapas/card-list/card-list.component';
 
 
 
@@ -18,7 +18,7 @@ const routes: Routes = [
     path: 'home', component: HomeComponent,
     children: [
       {
-        path: 'productos', component: TapasComponent
+        path: 'productos', component: CardListComponent
       },
 
     ]

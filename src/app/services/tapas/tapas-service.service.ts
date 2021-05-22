@@ -32,6 +32,8 @@ export class TapasServiceService {
     }));
   }
 
+
+
   /*  getToken() {
       return localStorage.getItem('token');
     }*/
@@ -49,6 +51,16 @@ export class TapasServiceService {
   cargarTiposTapas(): Observable<any> {
 
     return this.http.get(this.url.getUrl() + '/api/tapa/tipos');
+  }
+
+  cargarTapa(id):Observable<TapaModel>{
+    const hh: HttpHeaders = new HttpHeaders();
+    /*  hh = hh.append('Authorization', this.getToken());*/
+    return this.http.get(this.url.getUrl() + '/api/tapa/'+id, {headers: hh}).pipe(map((value: TapaModel) => {
+
+      return value;
+
+    }));
   }
 
 }

@@ -5,12 +5,15 @@
 
 
 }
+.mat-dialog-container {
+  padding: 0px !important;
+}
 .cardContainer{
-  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF7loAy7zjFrLmcAXMV5bLigw9QzQ1Jb_pOA&usqp=CAU") ;
+
   width: 100%;
   height: 100%;
-  background-size: cover;
-
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   transition: all ease-in-out 0.2s;
 

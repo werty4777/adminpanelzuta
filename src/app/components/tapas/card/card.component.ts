@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
-import {CardModalComponent} from '../card-modal/card-modal.component';
+import {CardModalComponent} from '../../../shared/components/card-modal/card-modal.component';
 
 @Component({
   selector: 'app-card',
@@ -8,6 +8,14 @@ import {CardModalComponent} from '../card-modal/card-modal.component';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
+
+  @Input()
+  foto:string
+
+  @Input()
+  id:any
+
+
 
   constructor(public dialog:MatDialog) { }
 
@@ -17,9 +25,13 @@ export class CardComponent implements OnInit {
   details(){
 
     this.dialog.open(CardModalComponent,{
-
+      data:{
+        id:this.id
+      }
     });
 
+
   }
+
 
 }

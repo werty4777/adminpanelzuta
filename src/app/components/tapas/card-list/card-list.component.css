@@ -14,3 +14,12 @@
 
   margin-bottom: 6rem;
 }
+#sticky{
+  position: fixed;
+
+  right: 20px;
+  bottom: 50px;
+  font-size: 30px;
+  margin-top: 20px;
+
+}

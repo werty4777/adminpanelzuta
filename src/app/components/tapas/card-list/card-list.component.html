@@ -1,0 +1,15 @@
+
+
+<div class="containerList">
+
+  <i class="fas fa-plus-circle" (click)="agregarProducto()" id="sticky" ></i>
+  <div class="wraperlista" *ngFor="let item of lista">
+    <app-card [id]="item.id"  [foto]="item.foto">
+    </app-card>
+    <div style="text-align: center;margin-top: 1rem">
+      <h3>{{item.nombre}}</h3>
+    </div>
+  </div>
+
+
+</div>
