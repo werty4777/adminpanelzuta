@@ -9,7 +9,7 @@ export class CardListComponent implements OnInit {
 
 
 
-  private lista:Number[]=[1,2,3,4,5];
+   lista:Number[]=[1,2,3,4,5,6,7];
 
   constructor() { }
 

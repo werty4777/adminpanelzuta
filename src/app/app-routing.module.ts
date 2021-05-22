@@ -18,7 +18,7 @@ const routes: Routes = [
     path: 'home', component: HomeComponent,
     children: [
       {
-        path: 'productos', component: TapasComponent
+        path: 'productos', component: CardListComponent
       },
 
     ]

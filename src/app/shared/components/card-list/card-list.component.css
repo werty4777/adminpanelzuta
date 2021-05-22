@@ -1,16 +1,16 @@
 .containerList{
   width: 100%;
-
+  overflow: hidden;
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-
-  justify-content: center;
+  margin-top: 4rem;
+  margin-left: 6rem;
 }
 .wraperlista{
-  margin-right: 5rem;
+  margin-right: 4rem;
 
   margin-bottom: 6rem;
 }
