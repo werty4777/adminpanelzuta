@@ -1,0 +1,51 @@
+.cardWrapper{
+
+  width: 25rem;
+  height: 20rem;
+
+
+}
+.cardContainer{
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF7loAy7zjFrLmcAXMV5bLigw9QzQ1Jb_pOA&usqp=CAU") ;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  transition: all ease-in-out 0.2s;
+
+
+}
+.cardContainer:hover{
+
+  /*opacity: 70%;*/
+  filter: grayscale(0.8);
+}
+
+
+.cardContainer > .description{
+
+  display: flex;
+  opacity: 0;
+  color: #58090c;
+  width: 100%;
+  height: 100%;
+
+  align-items: center;
+
+
+  transition: opacity ease-in-out 0.3s;
+}
+
+.cardContainer > .description:hover{
+  opacity: 100%;
+  z-index: -1;
+}
+
+
+.description>i{
+  font-size: 20px;
+  width: 100%;
+
+  text-align: center;
+}

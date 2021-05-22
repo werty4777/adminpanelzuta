@@ -1,0 +1,34 @@
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches" >
+  <mat-toolbar id="toolbar">
+
+      <mat-icon (click)="this.toggle.toggle()" style="cursor: pointer">menu</mat-icon>
+
+    <span>Sistema Inventario</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon (click)="logout()">exit_to_app</mat-icon>
+    </button>
+
+  </mat-toolbar>
+
+
+
+
+  <mat-drawer-container class="example-container" autosize>
+
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <mat-nav-list>
+        <a mat-list-item (click)="navegar(drawer,'productos')">Productos</a>
+
+      </mat-nav-list>
+    </mat-drawer>
+
+    <div>
+
+
+      <router-outlet></router-outlet>
+
+
+    </div>
+  </mat-drawer-container>
+</div>

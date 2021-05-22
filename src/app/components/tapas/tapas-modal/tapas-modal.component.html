@@ -1,0 +1,48 @@
+<div>
+  <form [formGroup]="grupo">
+
+
+    <h4>Nombre</h4>
+    <mat-form-field appearance="fill">
+      <input matInput formControlName="nombre">
+    </mat-form-field>
+
+
+    <h4>Tipo</h4>
+    <mat-form-field appearance="fill">
+
+      <mat-select [(ngModel)]="tipoSeleccionado" formControlName="tipo" >
+        <mat-option *ngFor="let tipo of tipo" [value]="tipo.id">
+          {{tipo.tipo}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <h4>Color</h4>
+    <mat-form-field appearance="fill">
+
+      <input matInput formControlName="color">
+    </mat-form-field>
+
+    <h4>Foto</h4>
+
+    <mat-form-field>
+      <ngx-mat-file-input [formControl]="fileControl" [multiple]="multiple" [accept]="'image/png'" [color]="color">
+
+      </ngx-mat-file-input>
+    </mat-form-field>
+
+
+    <h4>Cantidad</h4>
+    <mat-form-field appearance="fill">
+
+      <input matInput formControlName="cantidad">
+    </mat-form-field>
+
+    <h4></h4>
+    <button mat-raised-button color="primary" (click)="save()">Guardar Producto</button>
+
+  </form>
+
+
+</div>
