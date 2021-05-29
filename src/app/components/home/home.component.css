@@ -24,3 +24,23 @@
 .example-spacer {
   flex: 1 1 auto;
 }
+.fondopantalla{
+  z-index: -1;
+  position: absolute;
+  opacity: 30%;
+  background-image: url("src/assets/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  background-position: top;
+
+  backdrop-filter: opacity(50%);
+  overflow: hidden;
+  height: 100%;
+  padding-top: 0.5px;
+
+
+}
+.router{
+  overflow: hidden;
+}

@@ -1,7 +1,12 @@
 .containerList{
   width: 100%;
+
+
   overflow: hidden;
 
+
+
+  background-size: cover;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
