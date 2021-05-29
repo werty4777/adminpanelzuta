@@ -7,7 +7,7 @@ import {HttpClient} from '@angular/common/http';
 export class UrlServiceService {
 
 
-  private url = 'https://4e6a05dd85d3.ngrok.io';
+  private url = 'https://adminpanelzuta.herokuapp.com';
 
   constructor(private http: HttpClient) {
 
